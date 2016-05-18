@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="viewport" content="width=device-width">
-  <base href="">
+  <base href="../../">
   <title>Squared Up - Knowledge Base</title>
   <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
@@ -18,7 +18,7 @@
   
 <script type="text/javascript" async="" src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script></head>
 <body role="flatdoc">
-  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: 'html/navbar.html' --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="'html/navbar.html'"><div class="container-fluid ng-scope">
+  <!-- ngView:  --><div ng-view="" class="ng-scope"><!-- ngInclude: navbarHtml --><nav class="navbar navbar-default navbar-fixed-top ng-scope" ng-include="navbarHtml"><div class="container-fluid ng-scope">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
       <span class="sr-only">Toggle navigation</span>
@@ -34,14 +34,14 @@
     <div class="pull-left  hidden-xs" id="folder-navbar">
       <ul class="nav navbar-nav folder-li">
         <!-- ngRepeat: folder in map[currentVersion] --><li class="dropdown ng-scope" ng-repeat="folder in map[currentVersion]">
-          <a ng-href=./v2/plugins/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="plugins" href=./v2/plugins/index.html>
-            <span ng-bind="folder.label" class="link-restrict ng-binding">plugins</span>
+          <a ng-href=./v3/changelog/index.html class="dropdown-toggle map_folder" data-toggle="dropdown" role="button" aria-expanded="false" title="changelog" href=./v3/changelog/index.html>
+            <span ng-bind="folder.label" class="link-restrict ng-binding">changelog</span>
            </a>
           <ul class="dropdown-menu">
             <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-              <a ng-href=./v2/plugins/web.html title="web" ng-bind="file.label" class="ng-binding" href=./v2/plugins/web.html>web</a>
+              <a ng-href=./v3/changelog/changelog.html title="changelog" ng-bind="file.label" class="ng-binding" href=./v3/changelog/changelog.html>changelog</a>
             </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-              <a ng-href=./v2/plugins/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v2/plugins/index.html>index</a>
+              <a ng-href=./v3/changelog/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v3/changelog/index.html>index</a>
             </li><!-- end ngRepeat: file in folder.files -->
           </ul>
         </li><!-- end ngRepeat: folder in map[currentVersion] -->
@@ -53,12 +53,12 @@
             <!-- ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
               <ul>
                 <li class="dropdown-header">
-                  <a ng-href=./v2/plugins/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="plugins" href=./v2/plugins/index.html>plugins</a>
+                  <a ng-href=./v3/changelog/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="changelog" href=./v3/changelog/index.html>changelog</a>
                 </li>
                 <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                  <a ng-href=./v2/plugins/web.html title="web" ng-bind="file.label" class="ng-binding" href=./v2/plugins/web.html>web</a>
+                  <a ng-href=./v3/changelog/changelog.html title="changelog" ng-bind="file.label" class="ng-binding" href=./v3/changelog/changelog.html>changelog</a>
                 </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-                  <a ng-href=./v2/plugins/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v2/plugins/index.html>index</a>
+                  <a ng-href=./v3/changelog/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v3/changelog/index.html>index</a>
                 </li><!-- end ngRepeat: file in folder.files -->
               </ul>
             </li><!-- end ngRepeat: folder in map[currentVersion] -->
@@ -73,7 +73,7 @@
         </li>
         <li class="dropdown  hidden-xs">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-             <span ng-bind="currentVersion" class="ng-binding">v2</span> <span class="caret"></span>
+             <span ng-bind="currentVersion" class="ng-binding">v3</span> <span class="caret"></span>
           </a>
           <ul class="dropdown-menu version-switcher" role="menu">
             <!-- ngRepeat: version in versions --><li ng-repeat="version in versions" class="ng-scope">
@@ -93,7 +93,7 @@
       <ul class="nav navbar-nav">
         <li class="dropdown col-xs-6 p-l-0">
           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-             <span ng-bind="currentVersion" class="ng-binding">v2</span> <span class="caret"></span>
+             <span ng-bind="currentVersion" class="ng-binding">v3</span> <span class="caret"></span>
           </a>
           <ul class="dropdown-menu version-switcher" role="menu">
             <!-- ngRepeat: version in versions --><li ng-repeat="version in versions" class="ng-scope">
@@ -114,12 +114,12 @@
                 <!-- ngRepeat: folder in map[currentVersion] --><li class="col-sm-3 megamenu-item ng-scope" ng-repeat="folder in map[currentVersion]">
                   <ul>
                     <li class="dropdown-header">
-                      <a ng-href=./v2/plugins/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="plugins" href=./v2/plugins/index.html>plugins</a>
+                      <a ng-href=./v3/changelog/index.html class="map_folder ng-binding" data-toggle="dropdown" role="button" aria-expanded="false" ng-bind="folder.label" title="changelog" href=./v3/changelog/index.html>changelog</a>
                     </li>
                     <!-- ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope">
-                      <a ng-href=./v2/plugins/web.html title="web" ng-bind="file.label" class="ng-binding" href=./v2/plugins/web.html>web</a>
+                      <a ng-href=./v3/changelog/changelog.html title="changelog" ng-bind="file.label" class="ng-binding" href=./v3/changelog/changelog.html>changelog</a>
                     </li><!-- end ngRepeat: file in folder.files --><li ng-repeat="file in folder.files" data-ng-hide="file.name == 'index'" class="ng-scope ng-hide">
-                      <a ng-href=./v2/plugins/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v2/plugins/index.html>index</a>
+                      <a ng-href=./v3/changelog/index.html title="index" ng-bind="file.label" class="ng-binding" href=./v3/changelog/index.html>index</a>
                     </li><!-- end ngRepeat: file in folder.files -->
                   </ul>
                 </li><!-- end ngRepeat: folder in map[currentVersion] -->
@@ -132,24 +132,43 @@
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
-<div class="container-fluid push ng-scope">
-  <div class="row docbase-main">
-    <div class="col-xs-12 landing">
-      <h1>Squared Up<b> Documentation</b></h1>
-    </div>
-    <div class="col-xs-12 list">
-      <!-- ngRepeat: folder in map[currentVersion] --><a class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ng-binding ng-scope" ng-repeat="folder in map[currentVersion]" href=./v2/plugins/index.html ng-bind="folder.label">plugins</a><!-- end ngRepeat: folder in map[currentVersion] -->
+<div role="flatdoc" class="content-root ng-scope ng-hide" data-ng-show="!index">
+  <div class="menubar">
+    <div class="menu section" role="flatdoc-menu"></div>
+  </div>
+  <div role="flatdoc-content" class="content"></div>
+  	<div class="footer content">
+		<div class="row">
+			<div class="col-xs-12">	
+				<span data-ng-class="{disabled: paginationLinks.prev == null}" class="pull-left disabled">
+					<a href="" class="paginationLink pull-left">Previous</a>
+				</span>
+				<span data-ng-class="{disabled: paginationLinks.next == null}" class="pull-right disabled">
+					<a href="" class="paginationLink pull-right">Next</a>
+				</span>
+			</div>
 		</div>
-  </div>
-   <div class="row powered-by">
-    <div class="col-xs-12">
-      <a href="https://github.com/appbaseio/Docbase">
-        <img src="./images/PoweredByDocbase.png" class="img-responsive pull-right" alt="Powered by docbase">
-       </a>
-    </div>
-  </div>
+	</div>
 </div>
-</div>
+<!-- ngIf: index --><div class="index-container ng-scope" data-ng-if="index">
+	<div class="container">
+		<div class="row">
+			<h1 class="col-xs-12 ng-binding">
+				changelog (1 files)
+			</h1>
+		</div>	
+		<div class="row indexLinkContainer">
+			<ul class="col-xs-12 col-sm-6">
+				<!-- ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) <= indexList.length/2 --><li class="col-xs-12 ng-scope" data-ng-repeat="(key, file) in indexList" data-ng-if="file.name != 'index' &amp;&amp; (key+1) &lt;= indexList.length/2">
+					<a href=./v3/changelog/changelog.html class="col-xs-12 ng-binding"> changelog</a>
+				</li><!-- end ngIf: file.name != 'index' && (key+1) <= indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) <= indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList -->
+			</ul>
+			<ul class="col-xs-12 col-sm-6">
+				<!-- ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList --><!-- ngIf: file.name != 'index' && (key+1) > indexList.length/2 --><!-- end ngRepeat: (key, file) in indexList -->
+			</ul>
+		</div>
+	</div>
+</div><!-- end ngIf: index --></div>
 
  <script type="text/javascript" src="./docbase-config.js"></script>
   <script type="text/javascript" src="./bower_components/docbase/dist/js/main.unique.js"></script>

@@ -10,7 +10,7 @@ var docbaseConfig = {
   "github": {
     "user": "squaredup",
     "repo": "docs",
-    "path": "boilerplate_docs",
+    "path": "docs",
     "branch": "master",
     "access_token": "ZTBkMjA4NjY1ZmNmZWFhYTY1ZTdiY2ZiYzk4N2E0OTk0OWQyNGEzMA=="
   },
@@ -19,62 +19,14 @@ var docbaseConfig = {
   "default_version": "",
   "manual_override": false,
   "versions": {
-    "v1": [
+    "v2": [
       {
-        "label": "features",
-        "name": "features",
+        "label": "plugins",
+        "name": "plugins",
         "files": [
           {
-            "name": "colors",
-            "label": "colors"
-          },
-          {
-            "name": "gh-pages",
-            "label": "gh-pages"
-          },
-          {
-            "name": "search",
-            "label": "search"
-          },
-          {
-            "name": "versions",
-            "label": "versions"
-          },
-          {
-            "label": "index",
-            "name": "index"
-          }
-        ]
-      },
-      {
-        "label": "getting-started",
-        "name": "getting-started",
-        "files": [
-          {
-            "name": "configure",
-            "label": "configure"
-          },
-          {
-            "name": "start",
-            "label": "start"
-          },
-          {
-            "label": "index",
-            "name": "index"
-          }
-        ]
-      },
-      {
-        "label": "layout",
-        "name": "layout",
-        "files": [
-          {
-            "name": "3col",
-            "label": "3col"
-          },
-          {
-            "name": "navigation",
-            "label": "navigation"
+            "name": "web",
+            "label": "web"
           },
           {
             "label": "index",
@@ -83,7 +35,7 @@ var docbaseConfig = {
         ]
       }
     ],
-    "v2": [
+    "v3": [
       {
         "label": "changelog",
         "name": "changelog",
