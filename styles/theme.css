@@ -1,0 +1,23 @@
+.landing, .button, .navbar-fixed-top {
+	background-color: rgb(16,42,71);
+}
+.index-container li a, .menu a, .menu a:visited, .navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, a, ul.nav li.dropdown:hover>a {
+	color: rgb(16,42,71);
+}
+a:active, a:hover, .menu a:hover{
+	color: rgb(16,42,71);	
+}
+ .tt-menu:before {
+ 	border-bottom-color: rgb(16,42,71);
+ } 
+.paginationLink {
+	border-color: rgb(16,42,71);
+}
+.paginationLink:hover {
+	background: rgb(16,42,71);
+	border-color: rgb(16,42,71);
+}
+.megamenu> li > ul > li.dropdown-header > a {
+  color: rgb(16,42,71);
+  border-bottom-color: rgb(16,42,71);
+}
