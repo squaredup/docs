@@ -10,9 +10,9 @@ var docbaseConfig = {
   "github": {
     "user": "squaredup",
     "repo": "docs",
-    "path": "docs",
+    "path": "boilerplate_docs",
     "branch": "master",
-    "access_token": "ZjQ5NTYwYTBiYWFjMDdhOTE4NTg0ZDhhZTFjZGM2MTY5ZWZhNTIwNw=="
+    "access_token": ""
   },
   "indexHtml": "./html/main.html",
   "flatdocHtml": "./bower_components/docbase/html/flatdoc.html",

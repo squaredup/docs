@@ -1,4 +1,4 @@
-# Colors Test
+# Colors
 
 Your docs are where your users spend a significant time, they should look beautiful. Colors are baked right in docbase's design.
 
