@@ -12,7 +12,7 @@ var docbaseConfig = {
     "repo": "docs",
     "path": "boilerplate_docs",
     "branch": "master",
-    "access_token": ""
+    "access_token": "ZTBkMjA4NjY1ZmNmZWFhYTY1ZTdiY2ZiYzk4N2E0OTk0OWQyNGEzMA=="
   },
   "indexHtml": "./html/main.html",
   "flatdocHtml": "./bower_components/docbase/html/flatdoc.html",
@@ -21,52 +21,64 @@ var docbaseConfig = {
   "versions" : {
   "v1": [
     {
-      "name": "getting-started",
-      "label": "Getting Started",
-      "files": [
-        {
-          "name": "start",
-          "label": "Quick Start"
-        },
-        {
-          "name": "configure",
-          "label": "Configuration Options"
-        }
-      ]
-    },
-    {
+      "label": "features",
       "name": "features",
-      "label": "Features",
       "files": [
-        {
-          "name": "search",
-          "label": "Search"
-        },
         {
           "name": "colors",
-          "label": "Colorful"
+          "label": "colors"
         },
         {
           "name": "gh-pages",
-          "label": "Deploy to Github"
+          "label": "gh-pages"
+        },
+        {
+          "name": "search",
+          "label": "search"
         },
         {
           "name": "versions",
-          "label": "Versatile Navigation"
+          "label": "versions"
+        },
+        {
+          "label": "index",
+          "name": "index"
         }
       ]
     },
     {
-      "name": "layout",
-      "label": "Layout",
+      "label": "getting-started",
+      "name": "getting-started",
       "files": [
         {
-          "name": "navigation",
-          "label": "Site Navigation"
+          "name": "configure",
+          "label": "configure"
         },
         {
+          "name": "start",
+          "label": "start"
+        },
+        {
+          "label": "index",
+          "name": "index"
+        }
+      ]
+    },
+    {
+      "label": "layout",
+      "name": "layout",
+      "files": [
+        {
           "name": "3col",
-          "label": "Three columns"
+          "label": "3col"
+        },
+        {
+          "name": "navigation",
+          "label": "navigation"
+        },
+        {
+          "label": "index",
+          "name": "index"
         }
       ]
     }
