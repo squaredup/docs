@@ -70,18 +70,6 @@ var docbaseConfig = {
         }
       ]
     }
-  ],
-  "v2": [
-    {
-      "name": "changelog",
-      "label": "Changes",
-      "files": [
-        {
-          "name": "changelog",
-          "label": "Changelog"
-        }
-      ]
-    }
   ]
 },
   "publish": "github"
